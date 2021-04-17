@@ -3,7 +3,7 @@ import os
 from flask import Flask
 from flask_cors import CORS
 
-openai.api_key = "sk-uPdCOoIZTKHZUbjmkChGACHk6tOMqgtVu7oAJXbU"
+openai.api_key = ""
 
 
 def alice_function(request):
@@ -22,7 +22,7 @@ def alice_function(request):
         # header and caches preflight response for an 3600s
         headers = {
             'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': ['GET','POST'],
+            'Access-Control-Allow-Methods': ['GET', 'POST'],
             'Access-Control-Allow-Headers': 'Content-Type',
             'Access-Control-Max-Age': '3600'
         }
